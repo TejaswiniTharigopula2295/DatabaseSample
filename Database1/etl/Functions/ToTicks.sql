@@ -1,0 +1,10 @@
+﻿CREATE FUNCTION [etl].[ToTicks] (@DateTime DATETIME2 = NULL)
+  RETURNS bigint
+AS
+BEGIN
+
+	SET @DateTime = ISNULL(@DateTime, SYSDATETIME())
+	RETURN DATEDIFF_BIG( MICROSECOND, '20180101', @DateTime ) * 10 +
+           ( DATEPART( NANOSECOND, @DateTime ) % 1000 ) / 100;
+END
+

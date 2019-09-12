@@ -1,0 +1,40 @@
+﻿CREATE EXTERNAL TABLE [dbo].[DigitalModel] (
+    [DigitalModelGuid] UNIQUEIDENTIFIER NULL,
+    [DentalCaseGuid] UNIQUEIDENTIFIER NULL,
+    [UpperOrderItemGuid] UNIQUEIDENTIFIER NULL,
+    [LowerOrderItemGuid] UNIQUEIDENTIFIER NULL,
+    [IterationNumber] INT NULL,
+    [ModelTypeValue] INT NULL,
+    [ModelStateValue] INT NULL,
+    [ModelJsonLastUpdateUtc] DATETIME2 (7) NULL,
+    [ScannerTypeValue] INT NULL,
+    [CheckedOutUserGuid] UNIQUEIDENTIFIER NULL,
+    [CheckedOutUtc] DATETIME2 (7) NULL,
+    [ModelJSONVersionText] NVARCHAR (50) NULL,
+    [ModelJsonStoredFileGuid] UNIQUEIDENTIFIER NULL,
+    [IsActive] BIT NULL,
+    [ChangeUtc] DATETIME2 (7) NULL,
+    [ChangeUserGuid] UNIQUEIDENTIFIER NULL,
+    [ChangeProgramName] NVARCHAR (100) NULL,
+    [CreateUtc] DATETIME2 (7) NULL,
+    [CreateUserGuid] UNIQUEIDENTIFIER NULL,
+    [CreateProgramName] NVARCHAR (100) NULL,
+    [IsNewSetupCreatedFrom] BIT NULL,
+    [ModelStateUtc] DATETIME2 (7) NULL,
+    [ModelUploadUtc] DATETIME2 (7) NULL,
+    [PatientGuid] UNIQUEIDENTIFIER NULL,
+    [SalesOrderGuid] UNIQUEIDENTIFIER NULL,
+    [OrthoPrescriptionGuid] UNIQUEIDENTIFIER NULL,
+    [MaxMovementMm] FLOAT (53) NULL,
+    [MaxRotationDeg] FLOAT (53) NULL,
+    [MaxAngulationDeg] FLOAT (53) NULL,
+    [MaxTorqueDeg] FLOAT (53) NULL,
+    [IsModelOnHold] BIT NULL,
+    [AssignedToUserGuid] UNIQUEIDENTIFIER NULL
+)
+    WITH (
+    DATA_SOURCE = [RemoteDbProd],
+    SCHEMA_NAME = N'dbo',
+    OBJECT_NAME = N'DigitalModel'
+    );
+

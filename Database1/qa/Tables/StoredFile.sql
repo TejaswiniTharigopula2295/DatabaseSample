@@ -1,0 +1,28 @@
+﻿CREATE TABLE [qa].[StoredFile] (
+    [StoredFileGuid]            VARCHAR (256)   NULL,
+    [PatientGuid]               VARCHAR (256)   NULL,
+    [FileLocationUri]           NVARCHAR (1000) NULL,
+    [FriendlyFileName]          NVARCHAR (1000) NULL,
+    [FileSizeInBytes]           BIGINT          NULL,
+    [FileTypeValue]             INT             NULL,
+    [ScanTypeValue]             INT             NULL,
+    [PatientRecordTypeValue]    INT             NULL,
+    [ThumbnailFileLocationUri]  NVARCHAR (1000) NULL,
+    [IsActive]                  BIT             NULL,
+    [ChangeUtc]                 DATETIME2 (7)   NULL,
+    [ChangeUserGuid]            VARCHAR (256)   NULL,
+    [ChangeProgramName]         NVARCHAR (100)  NULL,
+    [CreateUtc]                 DATETIME2 (7)   NULL,
+    [CreateUserGuid]            VARCHAR (256)   NULL,
+    [CreateProgramName]         NVARCHAR (100)  NULL,
+    [CompressionAlgorithmValue] INT             NULL,
+    [IsFileCompressed]          BIT             NULL,
+    [ScanStageValue]            INT             NULL,
+    [LccStoredFileId]           VARCHAR (256)   NULL,
+    [QuickScanFileGuid]         VARCHAR (256)   NULL,
+    [ScannerTypeValue]          INT             NULL,
+    [FileGroupGuid]             VARCHAR (256)   NULL,
+    [FileSourceValue]           INT             NULL,
+    [ProcessedDateTime]         DATETIME        NOT NULL
+);
+

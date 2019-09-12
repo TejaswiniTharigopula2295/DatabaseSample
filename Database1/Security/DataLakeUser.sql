@@ -1,0 +1,2 @@
+﻿CREATE USER [DataLakeUser] WITHOUT LOGIN;
+

@@ -1,0 +1,27 @@
+﻿CREATE TABLE [qa].[TrayManufacturingSpecification] (
+    [TrayManufacturingSpecificationOrderItemGuid] VARCHAR (256)   NULL,
+    [ArchValue]                                   INT             NULL,
+    [TrayUseValue]                                INT             NULL,
+    [IterationNumber]                             INT             NULL,
+    [PrintableModelStoredFileGuid]                VARCHAR (256)   NULL,
+    [TrimPathStoredFileGuid]                      VARCHAR (256)   NULL,
+    [RoboticTrimPathStoredFileGuid]               VARCHAR (256)   NULL,
+    [MfgIprJson]                                  NVARCHAR (4000) NULL,
+    [LaserMarkingJson]                            NVARCHAR (1000) NULL,
+    [PrintableModelGlobalOriginText]              NVARCHAR (100)  NULL,
+    [PrintableModelTransformText]                 NVARCHAR (500)  NULL,
+    [ChangeUtc]                                   DATETIME        NULL,
+    [ChangeUserGuid]                              VARCHAR (256)   NULL,
+    [ChangeProgramName]                           NVARCHAR (100)  NULL,
+    [CreateUtc]                                   DATETIME        NULL,
+    [CreateUserGuid]                              VARCHAR (256)   NULL,
+    [CreateProgramName]                           NVARCHAR (100)  NULL,
+    [IsProcessed]                                 BIT             NULL,
+    [CtaParametersJson]                           NVARCHAR (1000) NULL,
+    [RoboticTrimPathLogStoredFileGuid]            VARCHAR (256)   NULL,
+    [IsOvercorrectionStage]                       BIT             NULL,
+    [HeatingBmpStoredFileGuid]                    VARCHAR (256)   NULL,
+    [LaserDeskStoredFileGuid]                     VARCHAR (256)   NULL,
+    [ProcessedDateTime]                           DATETIME        NOT NULL
+);
+

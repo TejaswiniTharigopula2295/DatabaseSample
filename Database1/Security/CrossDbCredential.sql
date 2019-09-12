@@ -1,0 +1,5 @@
+﻿CREATE DATABASE SCOPED CREDENTIAL [CrossDbCredential]
+    WITH IDENTITY = N'DataLakeUser';
+GO
+
+

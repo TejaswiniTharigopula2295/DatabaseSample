@@ -1,0 +1,25 @@
+﻿CREATE TABLE [qa].[ASPNetUsers] (
+    [Id]                   VARCHAR (256)  NULL,
+    [Email]                NVARCHAR (256) NULL,
+    [PhoneNumber]          NVARCHAR (MAX) NULL,
+    [PhoneNumberConfirmed] BIT            NULL,
+    [UserName]             NVARCHAR (256) NULL,
+    [IsActive]             BIT            NULL,
+    [FirstName]            NVARCHAR (100) NULL,
+    [MiddleName]           NVARCHAR (100) NULL,
+    [LastName]             NVARCHAR (100) NULL,
+    [ChangeUtc]            DATETIME2 (7)  NULL,
+    [ChangeUserGuid]       VARCHAR (256)  NULL,
+    [ChangeProgramName]    NVARCHAR (100) NULL,
+    [CreateUtc]            DATETIME2 (7)  NULL,
+    [CreateUserGuid]       VARCHAR (256)  NULL,
+    [CreateProgramName]    NVARCHAR (100) NULL,
+    [IsAdUser]             BIT            NULL,
+    [LastLoginUtc]         DATETIME2 (7)  NULL,
+    [BillingAccountGuid]   VARCHAR (256)  NULL,
+    [WelcomeLastSentUtc]   DATETIME2 (7)  NULL,
+    [FirstLastName]        NVARCHAR (201) NULL,
+    [LastFirstName]        NVARCHAR (202) NULL,
+    [ProcessedDateTime]    DATETIME       NOT NULL
+);
+

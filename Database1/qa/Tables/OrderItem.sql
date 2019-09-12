@@ -1,0 +1,25 @@
+﻿CREATE TABLE [qa].[OrderItem] (
+    [OrderItemGuid]           VARCHAR (256)   NULL,
+    [SalesOrderGuid]          VARCHAR (256)   NULL,
+    [OrderItemNumber]         INT             NULL,
+    [OrderItemTypeValue]      INT             NULL,
+    [IsActive]                BIT             NULL,
+    [ChangeUtc]               DATETIME2 (7)   NULL,
+    [ChangeUserGuid]          VARCHAR (256)   NULL,
+    [ChangeProgramName]       NVARCHAR (100)  NULL,
+    [CreateUtc]               DATETIME2 (7)   NULL,
+    [CreateUserGuid]          VARCHAR (256)   NULL,
+    [CreateProgramName]       NVARCHAR (100)  NULL,
+    [ApplianceGuid]           VARCHAR (256)   NULL,
+    [BlockSize]               INT             NULL,
+    [BrandOriginalName]       NVARCHAR (100)  NULL,
+    [DentalAlloy]             INT             NULL,
+    [MaterialColorName]       NVARCHAR (100)  NULL,
+    [ModelGuid]               VARCHAR (256)   NULL,
+    [OriginalRestorationText] NVARCHAR (2000) NULL,
+    [PrescriptionNoteText]    NVARCHAR (2000) NULL,
+    [ProductGuid]             VARCHAR (256)   NULL,
+    [RestorationGuid]         VARCHAR (256)   NULL,
+    [ProcessedDateTime]       DATETIME        NOT NULL
+);
+
